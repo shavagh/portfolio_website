@@ -1,0 +1,40 @@
+{% from "_render_field.html" import render_field %}
+{% extends "base.html" %}
+{% block title %} Login {% endblock%}
+{% block login_register %}
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Sign In</h5>
+
+              <form action="" method="POST">
+                {{ form.hidden_tag() }}
+                <fieldset>
+                  {{ render_field(form.username, placeholder=form.username.label.text) }}
+                  {{ render_field(form.password, placeholder=form.password.label.text) }}
+                </fieldset>
+                <div class="remember-check">
+                  {{ form.remember(class="form-check-input") }}
+                  {{ form.remember.label(class="form-check-label") }}
+                </div>
+                <div class="form-group">
+                  {{ form.submit(class="btn btn-lg btn-primary btn-block text-uppercase") }}
+                </div>
+                <div class="border-top pt-3">
+                  <small class="text-muted">
+                    Need An Account?<a class="ml-2" href="{{ url_for('register') }}">Sign In</a> <br>
+                    <a href="#">Forgot Password?</a>
+                  </small>
+                </div>  
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+{% endblock %}

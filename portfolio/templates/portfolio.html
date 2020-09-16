@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %} Portfolio {% endblock %}
+{% block content %}
+
+    <!-- Main Content Projects -->
+    <div class="main-content projects">
+        <div class="w3-container w3-card w3-white">
+            <h2><i class="fa fa-certificate w3-xxlarge w3-text-teal"></i> Portfolio</h2> <br>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>Stock Market Simulator Project</b></h5>
+                <p>This project stimulates stock price changes. It contains 3 types of stocks, currency, commodity and
+                    company stocks.
+                    price changes are man automatically every 5 seconds at random to stimulate the stock market. User has
+                    the ability to buy
+                    and sell stocks and all transactions are displayed. All data of stocks and transactions are saved in a
+                    file.</p> <br>
+                <figure>
+                    <img class="img-project" src="images/stockmarket.jpg" alt="" width="540pt" height="300pt">
+                    <p>Try code here:</p>
+                    <a href="projects/StockMarketSimulator.zip" download>
+                        <img src="images/download.jpg" alt="" width="240pt" height="70pt">
+                    </a>
+                    <hr>
+                </figure>
+    
+            </div>
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>Calculator Project</b></h5>
+                <p>This project is a simple calculator made to show basic programming skills e.g. procedural programming.
+                    user can add, minus, multiply and divide to numbers together to get a result. Use of java swing is used
+                    to show GUI implementation of calculator.</p> <br>
+                <figure>
+                    <img class="img-project" src="images/calculator.jpg" alt="" width="400pt" height="400pt">
+                    <p>Try code here:</p>
+                    <a href="projects/calculator.zip" download>
+                        <img src="images/download.jpg" alt="" width="240pt" height="70pt">
+                    </a>
+                    <hr>
+                </figure>
+                
+            </div>
+        </div>
+    </div>
+    <!-- END Main Content Projects -->
+
+{% endblock content %}

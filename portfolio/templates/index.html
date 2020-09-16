@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+{% block home_page %}
+    <!-- Banner -->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center masthead-heading">
+                    <h1>Welcome</h1>
+                    <p class="lead">created by Shavez Agha</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Banner -->
+    <!-- Main -->
+    <main>
+        <div class="container home-holder">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Software Developer</h2>
+                <h3 class="section-subheading text-muted">Current Computer Science Bsc Undergraduate</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 home-link">
+                    <h4 class="my-3"><a href="experience">Experience</a></h4>
+                </div>
+                <div class="col-md-3 home-link">
+                    <h4 class="my-3"><a href="portfolio">Portfolio</a></h4>
+                </div>
+                <div class="col-md-3 home-link">
+                    <h4 class="my-3"><a href="education">Education</a></h4>
+                </div>
+                <div class="col-md-3 home-link">
+                    <h4 class="my-3"><a href="achievements">Achievements</a></h4>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center socials">
+                <i style='font-size:24px;color:darkblue' class="fab fa-facebook"></i>
+                <i style='font-size:24px;color:lightskyblue' class="fab fa-twitter"></i>
+                <i style='font-size:24px;color:red' class="fab fa-youtube"></i>
+                <i style='font-size:24px;color:black' class="fab fa-github"></i>
+                <i style='font-size:24px;color:orangered'class="fab fa-google-plus"></i>
+            </div>
+        </div>
+    </main>
+    <!-- END Main -->
+    <!-- Skills -->
+    <section>
+        <div class="skills">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Languages</h2>
+            </div>
+            <div class="row text-center languages">
+                <div class="col-md-2 lang">
+                    <img src="../static/icons/python_icon.png" alt="">
+                    <h4 class="my-3">Python</h4>
+                </div>
+                <div class="col-md-2 lang">
+                    <img src="../static/icons/java_icon.png" alt="">
+                    <h4 class="my-3">Java</h4>
+                </div>
+                <div class="col-md-2 lang">
+                    <img src="../static/icons/js_icon.png" alt="">
+                    <h4 class="my-3">JavaScript</h4>
+                </div>
+                <div class="col-md-2 lang">
+                    <img src="../static/icons/php_icon.png" alt="">
+                    <h4 class="my-3">PHP</h4>
+                </div>
+                <div class="col-md-2 lang">
+                    <img src="../static/icons/html_icon.png" alt="">
+                    <h4 class="my-3">HTML</h4>
+                </div>
+                <div class="col-md-2 lang">
+                    <img src="../static/icons/css_icon.png" alt="">
+                    <h4 class="my-3">CSS</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END Skills -->
+{% endblock %}
+

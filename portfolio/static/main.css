@@ -1,0 +1,244 @@
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* HOME PAGE STYLE */
+.masthead {
+    height: 80vh;
+    min-height: 500px;
+    background-image: url('../static/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masthead .masthead-heading {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.masthead .masthead-heading h1 {
+    font-size: 6rem;
+}
+main {
+    margin: 8vh;
+}
+main .text-center h3 {
+    padding-top: 40pt;
+    border-top: 3px solid grey;
+    margin: 30pt;
+}
+.home-link {
+    margin-top: 10pt;
+    border: solid 2px black;
+    background-color: #EBEBEB;
+}
+.home-link:hover {
+    background-color: #D7D7D7;
+}
+.home-link a {
+    color: black;
+}
+.home-link a:hover {
+    text-decoration-line: none;
+    color: teal;
+}
+.socials i {
+    margin-top: 10pt;
+    padding: 20px;
+    margin-bottom: 20pt;
+}
+.skills {
+    padding: 10pt;
+    height: 40vh;
+    background-color: #39A5FF;
+}
+.skills .text-center h2 {
+    margin: 20pt;
+}
+.languages {
+    align-content: center;
+    margin: auto;
+}
+/* END HOME PAGE STYLE */
+
+
+/* FOOTER */
+footer {
+    height: 45vh;
+    background-color: black;
+}
+footer .row {
+    color: white;
+}
+footer .row  button{
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 5px;
+    height: 5vh;
+    width: 18vh;
+}
+footer .row  button:hover {
+    background-color: darkcyan;
+}
+
+footer .row h5 {
+    padding-top: 20pt;
+    padding-bottom: 10pt;
+    text-align: center;
+}
+/** END FOOTER **/
+
+
+
+/* NAVIGATION BAR STYLE */
+.navbar-custom {
+    background-color: #000000 !important;
+    height: 6vh;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: #D2D2D2;
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+/* END NAVIGATION BAR STYLE */
+
+
+/* MAIN CONTENT STYLE */
+.content-main {
+    border: black solid 2px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 10px #888888;
+}
+.content-holder {
+    margin: auto;
+    width: 95%;
+    margin-top: 20pt;
+}
+article {
+    background-color: white;
+    border: 1px black solid;
+}
+.article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+}
+.article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid grey;
+    padding: 5pt;
+}
+.article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.article-content {
+    padding: 5pt;
+}
+/* END MAIN CONTENT STYLE */
+
+
+/* SIDEBAR STYLE */
+.content-sidebar {
+    border: black solid 2px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10pt;
+}
+.content-sidebar ul {
+    padding: 0;
+    list-style: none;
+    border-top: solid 1px lightgrey;
+    font-size: medium;
+}
+.content-sidebar ul li a {
+    display: block;
+    padding: 12px 0 12px 0px;
+    border-bottom: 1px solid lightgrey;
+    transition: all 0.4s;
+    color: black;
+    padding-left: 10pt;
+}
+.content-sidebar ul li a:hover {
+    padding-left: 15px;
+    transition: all 0.4s;
+    color: teal;
+    background: #f3f9ff;
+}
+/* END SIDEBAR STYLE */
+
+/* LOGIN-REGISTER STYLE */
+.card-signin {
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.1);
+}
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.card-signin .card-body {
+    padding: 2rem;
+}
+.form-group .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 10pt;;
+}
+.remember-check {
+    margin-left: 1.8rem;
+    margin-bottom: 15pt;
+}
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.form-label-group .custom-input {
+    height: 40pt;
+    border-radius: 2rem;
+}
+/* END LOGIN-REGISTER STYLE */
+
+/* TOPIC STYLE */
+.main-content.timeline h2 {
+    margin-bottom: 40px;
+}
+.main-content.timeline hr {
+    border-color: lightgrey;
+}
+.main-content.timeline {
+    padding-bottom: 20pt;
+}
+.main-content.projects hr {
+    border: lightgrey 1px solid;
+}
+.main-content.Achievements {
+    padding-bottom: 20pt;
+}
+.main-content.Achievements hr {
+    margin-top: 20pt;
+}
+.account-section .container {
+    border: solid 1px black;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+}
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+/* END TOPIC STYLE */
+

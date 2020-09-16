@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/main.css">
+    <!-- Add font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+        <a class="navbar-brand ml-5" href="/">HOME</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav">
+                <a class="nav-link" href="{{ url_for('blog') }}">blog</a>
+                <a class="nav-link" href="#contact">contact</a>
+            </div>
+            <div class="navbar-nav ml-auto mr-5">
+                {% if current_user.is_authenticated %}
+                    <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
+                    <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+                {% else %}
+                    <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                    <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+                {% endif %}
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- END Navbar-->
+
+    <!-- Main Content -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="text-center pt-2 pb-2 alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+
+    {% block login_register %}
+    {% block home_page %}
+    <main class="container mt-5">
+        <div class="row">
+            {% block blog %}
+            <div class="content-main col-md-8">
+                <div class="content-holder">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+            {% endblock %}
+            <!-- Side Bar -->
+            <div class="col-md-4">
+                <div class="content-sidebar">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                        <li><a href="{{ url_for('portfolio') }}">Portfolio</a></li>
+                        <li><a href="{{ url_for('education') }}">Education</a></li>
+                        <li><a href="{{ url_for('achievements') }}">Achievements</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- END Sidebar -->
+        </div>
+    </main>
+    <!-- END Main Content -->
+    {% endblock %}
+
+    <!-- Contact -->
+    <footer>
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5> Send A Message</h5>
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" />
+                        </div>
+                    
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Get in Touch</h5>
+                    <ul class="list-ico">
+                        <p><i class="fas fa-map-marker-alt"></i>    329 WASHINGTON ST BOSTON, MA 02108</p>
+                        <p><i class="fas fa-phone"></i>    +44 0730 558 1065</p>
+                        <p><i class="fas fa-envelope-open"></i>    Shavez.Agha18@gmail.com</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END Contact -->
+    {% endblock %}
+
+
+    <!-- Font Awesome 5 Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
