@@ -177,6 +177,7 @@ article {
 /* END SIDEBAR STYLE */
 
 /* LOGIN-REGISTER STYLE */
+
 .card-signin {
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.1);
@@ -229,16 +230,28 @@ article {
 .main-content.Achievements hr {
     margin-top: 20pt;
 }
-.account-section .container {
-    border: solid 1px black;
-    margin-top: 20pt;
-    margin-bottom: 20pt;
+/* END TOPIC STYLE */
+
+
+/* ACCOUNT STYLE */
+.account-section img {
+    margin: auto;
 }
 .account-img {
     height: 125px;
     width: 125px;
     margin-right: 20px;
     margin-bottom: 16px;
-  }
-/* END TOPIC STYLE */
+}
+.account-section {
+    margin-top: 80pt;
+    margin-bottom: 120pt;
+    padding: 2rem;
+    width: 70vh;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.1);
+}
+/* END ACCOUNT STYLE */
+
 
