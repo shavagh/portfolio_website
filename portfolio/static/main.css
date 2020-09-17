@@ -129,12 +129,13 @@ article {
 .article-img {
     height: 65px;
     width: 65px;
-    margin-right: 16px;
+    margin-top: 35px;
+    margin-right: 10px;
+    margin-left: 12px;
 }
 .article-metadata {
-    padding-bottom: 1px;
-    margin-bottom: 4px;
     border-bottom: 1px solid grey;
+    margin-right: 15px;
     padding: 5pt;
 }
 .article-metadata a:hover {
@@ -253,5 +254,14 @@ article {
     box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.1);
 }
 /* END ACCOUNT STYLE */
-
-
+.form-group .post-btn {
+    width:20vh; 
+    margin: -30px -80px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+.create-post {
+    height: 25vh;
+    margin-bottom: 100pt;
+}
