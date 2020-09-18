@@ -265,3 +265,6 @@ article {
     height: 25vh;
     margin-bottom: 100pt;
 }
+.page-counters {
+    border: solid 1px red;
+}

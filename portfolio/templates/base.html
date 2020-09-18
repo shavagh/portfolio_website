@@ -56,6 +56,7 @@
     {% block home_page %}
     <main class="container mt-5">
         <div class="row">
+            {% block blog_title %}{% endblock %}
             {% block blog %}
             <div class="content-main col-md-8">
                 <div class="content-holder">
@@ -81,7 +82,8 @@
     </main>
     <!-- END Main Content -->
     {% endblock %}
-
+    {% block page_counter %}{% endblock %}
+    
     <!-- Contact -->
     <footer>
         <div class="container" id="contact">
