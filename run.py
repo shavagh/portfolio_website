@@ -1,5 +1,6 @@
-from portfolio import app
+from portfolio import create_app
 
-# run flask application
-if __name__ == "__main__":
+app = create_app()
+
+if __name__ == '__main__':
     app.run(debug=True)
