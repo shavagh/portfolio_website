@@ -268,3 +268,7 @@ article {
 .page-counters {
     border: solid 1px red;
 }
+.error-content {
+    height: 100vh;
+    margin-top: 50pt;
+}
