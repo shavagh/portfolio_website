@@ -2,6 +2,8 @@
 
 Portfolio website Template using Flask Framework.
 
+<img src="images/login.JPG" >
+
 contains portfolio content :
 - achievements
 - experience 
