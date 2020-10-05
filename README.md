@@ -17,6 +17,13 @@ includes:
 - view other users account posts
 - post split into different pages
 
+<h2> Account Page </h2>
+<img src="Images/account.JPG" width="1000">
+includes:
+- modify personal details (email, username)
+- change profile picture
+- fields are auto filled
+
 <h2> Login Page </h2>
 <img src="Images/login.JPG" width="1000">
 includes:
@@ -30,7 +37,6 @@ includes:
 includes:
 - register user
 - option to sign in
-
 
 
 
