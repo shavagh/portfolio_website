@@ -39,8 +39,7 @@ includes:
 - option to sign in
 
 
-
-
+<br><br>
 Flask Usage : 
 - Login and Registration System
 - User Account system
